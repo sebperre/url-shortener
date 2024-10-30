@@ -27,18 +27,12 @@ the functionality such as a database, the redirect and manages requests to it.
 
 In the Frontend folder, run
 ```bash
-npm init -y
-npm install react react-dom
-npm i @tanstack/react-query
-npm install axios
-npm install -D tailwindcss
+npm install
 ```
 
 In the backend folder, run
 ```bash
-npm install express
-npm install cors
-npm install sqlite3
+npm install
 ```
 
 ## Usage
