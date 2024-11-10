@@ -41,13 +41,11 @@ function gen_short_url() {
     }
     // Check to make sure the code generated isn't already in use
 
-    shortURL = "http://localhost:4000/" + shortURL
-
     return shortURL;
 }
 
 async function input_url(url) {
-    short_url = gen_short_url()
+    let short_url = gen_short_url()
 
     sql = `INSERT INTO urls(url, short_url) VALUES (?, ?)`;
 
@@ -72,7 +70,7 @@ async function to_short_url(url) {
         })
     })
 
-    short_url = ""
+    let short_url = ""
 
     if (found_row === "No Record Found") {
         short_url = await input_url(url)

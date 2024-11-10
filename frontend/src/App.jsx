@@ -2,12 +2,14 @@ import { /*useQuery,*/ useMutation } from "@tanstack/react-query"
 import { /*fetchURLs,*/ postURL } from "./apiCalls"
 import { useState } from "react"
 
+const START_URL = "http://localhost:4000/"
+
 function App() {
   const [inputValue, setInputValue] = useState("")
   const [shortenURL, setShortenURL] = useState("")
   const mutation = useMutation({mutationFn: async (url) => {
       let postData = await postURL(url);
-      setShortenURL(postData.data)
+      setShortenURL(START_URL + postData.data)
       return postData;
   }})
 

@@ -21,7 +21,7 @@ app.get("/getAllURLs", async (req, res) => {
 })
 
 app.get("/:code", async (req, res) => {
-  let long_url = await to_long_url(BASE_URL + req.params.code)
+  let long_url = await to_long_url(req.params.code)
 
   if (long_url === "No Record Found") {
     res.status(400)
