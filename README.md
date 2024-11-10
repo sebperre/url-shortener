@@ -49,6 +49,13 @@ and in the frontend folder, run
 npm start
 ```
 
+## Clearing the Database
+To clear the database, go into the backend folder and run
+
+```bash
+./cleardb.sh
+```
+
 ## Extra Notes
 
 The backend uses port 4000 and the frontend uses port 3000.
