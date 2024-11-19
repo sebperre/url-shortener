@@ -53,7 +53,7 @@ npm start
 To clear the database, go into the backend folder and run
 
 ```bash
-./cleardb.sh
+bash cleardb.sh
 ```
 
 ## Extra Notes
