@@ -1,4 +1,4 @@
-# URL Shortner
+# URL Shortener
 
 ## Overview
 
