@@ -1,29 +1,24 @@
 # URL Shortener
 
-## Overview
+## Overview 🧭
 
-This webapp has a fully functioning backend and frontend. The frontend consists of a tutorial on how to generate a shorter url. The backend consists of all
-the functionality such as a database, the redirect and manages requests to it.
+Shorten URLs with this application! Just enter your URL and hit Create.
 
-## Features
+<img width="1147" height="351" alt="image" src="https://github.com/user-attachments/assets/a5b3c289-26c7-482e-a753-a8b1bbaa2a44" />
+
+## Features 🔧
 
 - **Simplistic Frontend Design**: Easy to generate a short url and use it.
 - **Database**: Uses a database to store the shorten urls and the relationship to the longer urls.
 
-## Tech Stack
-### Frontend
-1. React
-2. CSS
-3. HTML
-4. JavaScript
-5. Tailwind
+## Requirements 📋
 
-### Backend
-1. Express
-2. Javascript
-3. SQLite3
+* Any hardware requirements, etc.
+* etc.
 
-## Requirements
+## Usage 🛠️
+
+### <ins>Setup</ins>
 
 In the Frontend folder, run
 ```bash
@@ -35,12 +30,12 @@ In the backend folder, run
 npm install
 ```
 
-## Usage
+### <ins>Running the Application</ins>
 
 To start up the backend server, go into the backend folder and run
 
 ```bash
-node index.js
+npm start
 ```
 
 and in the frontend folder, run
@@ -49,17 +44,18 @@ and in the frontend folder, run
 npm start
 ```
 
-## Clearing the Database
+### <ins>Clearing the Database</ins>
+
 To clear the database, go into the backend folder and run
 
 ```bash
 bash cleardb.sh
 ```
 
-## Extra Notes
+## Extra Notes 📝
 
-The backend uses port 4000 and the frontend uses port 3000.
+* The backend uses port 4000 and the frontend uses port 3000.
 
-## License
+## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
