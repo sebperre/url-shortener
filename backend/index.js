@@ -1,7 +1,5 @@
 const PORT = 4000;
-const BASE_URL = "http://localhost:4000/"
 
-// const ws = require('ws');
 const express = require('express');
 const cors = require('cors');
 const { get_all_urls, to_short_url, to_long_url } = require('./database');

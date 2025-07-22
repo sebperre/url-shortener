@@ -2,34 +2,10 @@ const sqlite3 = require("sqlite3").verbose();
 let sql;
 
 const URL_LENGTH = 5
-// connect to DB
+
 const db = new sqlite3.Database("./urls.db", sqlite3.OPEN_READWRITE, (err) => {
     if (err) return console.error(err.message);
 })
-// Create table
-// sql = `CREATE TABLE urls(id INTEGER PRIMARY KEY, url, short_url)`;
-// db.run(sql);
-
-// Drop Table
-// db.run("DROP TABLE urls")
-
-// Insert Data into Table
-// sql = `INSERT INTO urls(url, short_url) VALUES (?, ?)`;
-// db.run(sql, ["https://sebastienperre.org", "https://sebly/2342l"], (err) => {
-//     if (err) return console.error(err.message);
-// })
-
-// Update Data
-// sql = `UPDATE urls SET url = ? WHERE id = ?`;
-// db.run(sql, ["https://chrishuk.dev", 1], (err) => {
-//     if (err) return console.error(err.message);
-// })
-
-// Delete Data
-// sql = `DELETE FROM urls WHERE id=?`;
-// db.run(sql, [1], (err) => {
-//     if (err) return console.error(err.message);
-// })
 
 function gen_short_url() {
     const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -39,7 +15,6 @@ function gen_short_url() {
         const randomIndex = Math.floor(Math.random() * characters.length);
         shortURL += characters[randomIndex];
     }
-    // Check to make sure the code generated isn't already in use
 
     return shortURL;
 }
@@ -98,7 +73,6 @@ async function to_long_url(url) {
     return long_url.url
 }
 
-// Query the Data
 async function get_all_urls() {
     sql = `SELECT * FROM urls`;
 
